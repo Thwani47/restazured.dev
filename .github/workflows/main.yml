@@ -42,7 +42,7 @@ jobs:
           flags: '-avzr --delete'
           options: ''
           ssh_options: ''
-          src: 'public/'
+          src: 'dist/'
           dest: '${{secrets.SSH_USER}}@${{secrets.SSH_HOST}}:/var/www/restazured.dev/html/'
 
       - name: Display status from deploy
